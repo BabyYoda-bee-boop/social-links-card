@@ -1,0 +1,10 @@
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 7 Free"
+}
+
+.fa-square-github {
+  content: "\f092";
+}

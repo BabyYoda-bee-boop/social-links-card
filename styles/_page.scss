@@ -1,0 +1,85 @@
+@use "./variables" as *;
+@use "./fontawesome";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {padding: 0; margin: 0;}
+img {
+  max-width: 100%;
+  display: block;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  max-width: 60em;
+  margin-inline: auto;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  text-align: center;
+  line-height: calc(var(--padding-100) * 4);
+  color: var(--clr-font-primary);
+  background-color: var(--clr-grey-900);
+  min-height: 100vh;
+
+  .container {
+    flex: 1;
+  }
+  .card {
+    background-color: var(--clr-grey-800);
+    padding: calc(var(--padding-300) * 2);
+    border-radius: var(--padding-150);
+    &__img {
+      margin-inline: auto;
+      max-width: 5rem;
+      border-radius: 50%;
+      padding-bottom: var(--padding-300);
+    }
+    &__name {
+      font-weight: 700;
+    }
+    &__location {
+      font-weight: 700;
+      padding-top: var(--padding-50);
+      color: var(--clr-accent);
+    }
+    &__quote {
+      padding-block: var(--padding-150)
+    }
+    &__social-links {
+      align-items: stretch;
+      gap: calc(var(--padding-50) * 4);
+    }
+    &__social-item {
+      list-style: none;
+      background-color: var(--clr-grey-700);
+      border-radius: var(--padding-150);
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        width: 100%;
+        padding: var(--padding-100);
+        &:hover,
+        &:focus-visible {
+          color: var(--clr-accent);
+        }
+      }
+    }
+    .fa-square-github::before {
+        color: hsl(from var(--clr-accent) h s l / .50);
+
+    }
+  }
+}

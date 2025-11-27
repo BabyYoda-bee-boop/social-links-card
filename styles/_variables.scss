@@ -1,0 +1,21 @@
+
+:root {
+  //fonts and colors
+  --clr-font-primary: hsl(0, 0%, 100%);
+  --clr-accent: hsl(75, 94%, 57%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+
+  --ff-primary: Inter, sans-serif;
+
+  --fs-700: 2rem;
+  --fs-400: 1rem;
+  --fs-300: calc(14rem / 16);
+
+  // spacings
+  --padding-300: 1.5em;
+  --padding-150: 0.75em;
+  --padding-100: 0.5em;
+  --padding-50: 0.25em;
+}

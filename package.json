@@ -1,0 +1,17 @@
+{
+  "name": "social-links-profile-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social links profile coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/main.scss styles/style.css",
+    "sass:watch": "sass --watch styles/main.scss:styles/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
