@@ -1,10 +1,34 @@
-.icon::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 7 Free"
+.icon {
+  &::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 7 Brands";
+    font-weight: 400;
+    font-size: 2em;
+    vertical-align: middle;
+    line-height: 1;
+
+    color: hsl(from var(--clr-accent) h 60% 30%);
+    margin-right: var(--padding-100);
+
+    transition: all 0.5s ease;
+  }
+  &:hover::before,
+  &:focus::before {
+    color: var(--clr-accent);
+  }
 }
 
-.fa-square-github {
+.fa-square-github::before {
   content: "\f092";
+}
+.fa-square-linkedin::before {
+  content: "\e7d0";
+}
+.fa-square-twitter::before {
+  content: "\f081";
+}
+.fa-square-instagram::before {
+  content: "\e055";
 }

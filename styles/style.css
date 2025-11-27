@@ -5,6 +5,7 @@
   --clr-grey-800: hsl(0, 0%, 12%);
   --clr-grey-700: hsl(0, 0%, 20%);
   --ff-primary: Inter, sans-serif;
+  --line-height: 1.5;
   --fs-700: 2rem;
   --fs-400: 1rem;
   --fs-300: calc(14rem / 16);
@@ -18,11 +19,33 @@
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 7 Free";
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  font-size: 2em;
+  vertical-align: middle;
+  line-height: 1;
+  color: hsl(from var(--clr-accent) h 60% 30%);
+  margin-right: var(--padding-100);
+  transition: all 0.5s ease;
+}
+.icon:hover::before, .icon:focus::before {
+  color: var(--clr-accent);
 }
 
-.fa-square-github {
+.fa-square-github::before {
   content: "\f092";
+}
+
+.fa-square-linkedin::before {
+  content: "\e7d0";
+}
+
+.fa-square-twitter::before {
+  content: "\f081";
+}
+
+.fa-square-instagram::before {
+  content: "\e055";
 }
 
 *, *::after, *::before {
@@ -58,7 +81,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
   text-align: center;
-  line-height: calc(var(--padding-100) * 4);
+  line-height: var(--line-height);
   color: var(--clr-font-primary);
   background-color: var(--clr-grey-900);
   min-height: 100vh;
@@ -95,7 +118,7 @@ body .card__social-links {
 body .card__social-item {
   list-style: none;
   background-color: var(--clr-grey-700);
-  border-radius: var(--padding-150);
+  border-radius: var(--padding-100);
 }
 body .card__social-item a {
   display: inline-block;
@@ -104,12 +127,28 @@ body .card__social-item a {
   font-weight: 600;
   width: 100%;
   padding: var(--padding-100);
+  transition: all 0.5s ease;
 }
-body .card__social-item a:hover, body .card__social-item a:focus-visible {
+body .card__social-item a:hover, body .card__social-item a:focus {
   color: var(--clr-accent);
 }
-body .card .fa-square-github::before {
-  color: hsl(from var(--clr-accent) h s l/0.5);
+body .card .frontend-mentor::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../assets/images/favicon-32x32.png");
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  border-radius: var(--padding-50);
+  width: 2em;
+  aspect-ratio: 1;
+  background-color: hsl(from var(--clr-accent) h 60% 30%);
+  vertical-align: -0.5em;
+  margin-right: var(--padding-100);
+  transition: all 0.5s ease;
+}
+body .card .frontend-mentor:hover::before, body .card .frontend-mentor:focus::before {
+  background-color: var(--clr-accent);
 }
 
 /*# sourceMappingURL=style.css.map */

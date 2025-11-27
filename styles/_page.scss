@@ -27,7 +27,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
   text-align: center;
-  line-height: calc(var(--padding-100) * 4);
+  line-height: var(--line-height);
   color: var(--clr-font-primary);
   background-color: var(--clr-grey-900);
   min-height: 100vh;
@@ -63,7 +63,7 @@ body {
     &__social-item {
       list-style: none;
       background-color: var(--clr-grey-700);
-      border-radius: var(--padding-150);
+      border-radius: var(--padding-100);
       a {
         display: inline-block;
         text-decoration: none;
@@ -71,15 +71,33 @@ body {
         font-weight: 600;
         width: 100%;
         padding: var(--padding-100);
+        transition: all 0.5s ease;
         &:hover,
-        &:focus-visible {
+        &:focus {
           color: var(--clr-accent);
         }
       }
     }
-    .fa-square-github::before {
-        color: hsl(from var(--clr-accent) h s l / .50);
-
+    .frontend-mentor {
+      &::before {
+      content: "";
+      display: inline-block;
+      background-image: url("../assets/images/favicon-32x32.png");
+      background-position: center;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      border-radius: var(--padding-50);
+      width: 2em;
+      aspect-ratio: 1;
+      background-color: hsl(from var(--clr-accent) h 60% 30%);
+      vertical-align: -0.5em;
+      margin-right: var(--padding-100);
+      transition: all 0.5s ease;
+    }
+    &:hover::before,
+    &:focus::before {
+      background-color: var(--clr-accent);
+    }
     }
   }
 }
