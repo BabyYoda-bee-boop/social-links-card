@@ -80,24 +80,24 @@ body {
     }
     .frontend-mentor {
       &::before {
-      content: "";
-      display: inline-block;
-      background-image: url("../assets/images/favicon-32x32.png");
-      background-position: center;
-      background-size: 60%;
-      background-repeat: no-repeat;
-      border-radius: var(--padding-50);
-      width: 2em;
-      aspect-ratio: 1;
-      background-color: hsl(from var(--clr-accent) h 60% 30%);
-      vertical-align: -0.5em;
-      margin-right: var(--padding-100);
-      transition: all 0.5s ease;
-    }
-    &:hover::before,
-    &:focus::before {
-      background-color: var(--clr-accent);
-    }
+        content: "";
+        display: inline-block;
+        background-image: url("../assets/images/favicon-32x32.png");
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        border-radius: var(--padding-50);
+        width: 2em;
+        aspect-ratio: 1;
+        background-color: hsl(from var(--clr-accent) h 60% 30%);
+        vertical-align: -0.5em;
+        margin-right: var(--padding-100);
+        transition: all 0.5s ease;
+      }
+      &:hover::before,
+      &:focus::before {
+        background-color: var(--clr-accent);
+      }
     }
   }
 }
