@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/font-awesome-icons-flexbox-pseudo-elements-naBBiwFhXO)
 - Live Site URL: [Click here](https://transcendent-pastelito-10360e.netlify.app/)
 
 ## My process
