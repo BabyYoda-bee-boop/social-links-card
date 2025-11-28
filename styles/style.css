@@ -98,10 +98,11 @@ body .card__img {
   margin-inline: auto;
   max-width: 5rem;
   border-radius: 50%;
-  padding-bottom: var(--padding-300);
+  margin-bottom: var(--padding-300);
 }
 body .card__name {
-  font-weight: 700;
+  font-size: calc(var(--fs-400) * 1.75);
+  font-weight: 600;
 }
 body .card__location {
   font-weight: 700;
